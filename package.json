@@ -2,11 +2,11 @@
   "name": "package.json",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module", 
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "test2": "node src/index.js",
-    "dev": "node src/server.js"
+    "dev": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
   "description": "",
   "dependencies": {
     "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }

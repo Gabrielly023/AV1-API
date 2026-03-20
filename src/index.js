@@ -3,10 +3,14 @@ export const tarefas = [
     {id: 2, titulo:"fazer banco de dados", concluida: false}
 ];
 
-tarefas.push ({
-    id:3,
-    titulo: "estudar prova",
-    concluida: false
-});
+function adicionarTarefas(titulo) {
+    const novaTarefa = {
+        id: tarefas.length + 1,
+        titulo: titulo,
+        concluido: false
+    };
+
+    tarefas.push(novaTarefa);
+}
 
 console.log(tarefas);

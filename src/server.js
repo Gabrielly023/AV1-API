@@ -25,4 +25,5 @@ app.post("/tarefas", (req, res) => {
             erro:"Título obrigatório."
         })
     }
+res.status(200).json(titulo);
 });
